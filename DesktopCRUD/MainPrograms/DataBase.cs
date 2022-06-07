@@ -122,29 +122,6 @@ public static class DataBase
                         clientFlight.Price = (double) reader.GetDecimal(ordinal);
                         break;
                 }
-                
-                //
-                // switch (reader.GetPostgresType(ordinal).ToString())
-                // {
-                //     case "integer":
-                //         readId.Add(Convert.ToString(reader.GetInt32(ordinal)));
-                //         break;
-                //     case "character":
-                //         readId.Add(reader.GetString(ordinal));
-                //         break;
-                //     case "character varying":
-                //         readId.Add(reader.GetString(ordinal));
-                //         break;
-                //     case "date":
-                //         var date = Convert.ToString(reader.GetDateTime(ordinal), CultureInfo.InvariantCulture);
-                //         date = date.Split(' ')[0];
-                //         readId.Add(date);
-                //         break;
-                //     case "money":
-                //         readId.Add(Convert.ToString(reader.GetDecimal(ordinal), CultureInfo.InvariantCulture));
-                //         break;
-                // }
-                
             }
         }
         else

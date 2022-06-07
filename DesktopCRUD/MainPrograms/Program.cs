@@ -1,5 +1,4 @@
 ﻿using System;
-using System.IO;
 using System.Threading;
 using System.Windows.Forms;
 using DesktopCRUD.Forms;
@@ -16,7 +15,7 @@ namespace DesktopCRUD.MainPrograms
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //DataBase.Connection();
+            DataBase.Connection();
             Music.MusicPlayerStatus = true;
             var musicThreadStart = new ThreadStart(Music.StartPlay);
             var musicThread = new Thread(musicThreadStart);
